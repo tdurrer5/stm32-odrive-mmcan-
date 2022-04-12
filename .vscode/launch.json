@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/stm32-odrive-can.elf",
+            "name": "STM32 Debug (OpenOCD)",
+            "device": "STM32F446RE",
+            "svdFile": "${workspaceRoot}/STM32F446.svd",
+            "configFiles": [
+                "interface/stlink-v2.cfg",
+                "target/stm32f4x_stlink.cfg",
+             ],
+            "interface": "swd",
+            "swoConfig": {
+                    "source": "probe",
+                    "enabled": true,
+                    "swoFrequency": 2000000,
+                    "cpuFrequency": 168000000,
+                    "decoders": [
+                            {
+                                    "port": 29,
+                                    "type": "console",
+                                    "label": "Output"                                                                                               
+                            }
+                    ]
+                    
+            }
+        }
+    ]
+}

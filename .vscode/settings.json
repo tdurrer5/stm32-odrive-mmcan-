@@ -1,0 +1,9 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.default.defines": [
+        "STM32F446xx"
+    ],
+    "files.associations": {
+        "main.h": "c"
+    }
+}

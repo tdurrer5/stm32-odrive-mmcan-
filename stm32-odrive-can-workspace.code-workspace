@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"c-cpp-flylint.cppcheck.standard": ["c99","c++14"],
+		"files.associations": {
+			"main.h": "c",
+			"stm32f4xx_hal.h": "c",
+			"freertos.h": "c",
+			"typeinfo": "c",
+			"can.h": "c",
+			"odrive_can.h": "c",
+			"stm32f4xx_hal_can.h": "c",
+			"u8g2.h": "c"
+		}
+	}
+}
